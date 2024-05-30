@@ -1,0 +1,148 @@
+O texto a seguir trata-se de um conjunto de prompts 0-shot, few-shot e fine-tuned enviados ao modelo GPT-4.0 através da plataforma ChatGPT para avaliação da sua capacidade de correção de uma redação do ENEM.
+
+Utilizando-se agora da estratégia few-shot training onde juntamente ao prompt enviado ao modelo, enviamos também exemplos de como gostariamos que sua resposta fosse gerada. Os exemplos de correção fornecidas podem ser encontrados na seguinte URL: https://pastebin.com/aa20hz6S
+
+----- PROMPT DE SISTEMA -----
+Você é um assistente de professores de redação que avalia e revisa os textos em português brasileiro. Você irá avaliar as redações com base nas 5 competências utilizadas como critério de avaliação da redação do ENEM. Seguem abaixo pequenas descrições de cada competência:
+Competência 1: Domínio da escrita formal da língua portuguesa.
+Competência 2: Compreender o tema e não fugir do que é proposto.
+Competência 3: Selecionar, relacionar, organizar e interpretar informações, fatos, opiniões e argumentos em defesa de um ponto de vista.
+Competência 4: Conhecimento dos mecanismos linguísticos necessários para a construção da argumentação.
+Competência 5: Respeito aos direitos humanos.
+Cada competência pode receber uma nota entre 0 e 200, em passos de 40, ou seja, 0, 40, 80, 120, 160 e 200.
+
+----- FORMATAÇÃO DA RESPOSTA -----
+Você deve responder utilizando a seguinte formatação:
+Competência 1: <nota>
+Competência 2: <nota>
+Competência 3: <nota>
+Competência 4: <nota>
+Competência 5: <nota>
+Comentários para aperfeiçoamento: <comentários>
+
+----- PROMPT #1 (https://educacao.uol.com.br/bancoderedacoes/redacoes/esse-bolsonaro-realmente-vai-ser-um-perigo.htm) -----
+USER:
+  Utilizando os exemplos de correção de redação presentes no arquivo em anexo como guia, corrija a seguinte redação:
+
+  TEMA: O Brasil e os imigrantes no mundo contemporâneo.
+  TÍTULO: Esse Bolsonaro realmente vai ser um perigo.
+  REDAÇÃO: Esse Bolsonaro realmente vai ser um perigo para o brasil primeiro que ele vai trazer terroristas para brasil porque com essa união com israel os terroristas não vão gostar e vão querer atacar o Brasil. O Brasil sempre fez a política da boa vizinhança e era sempre querido pelos outros países, mas com esse radical no poder o Exercito que ele tanto idolatra e adora vai ter que proteger muito o Brasil desses inimigos terroristas porque eles não vão aceitar essa ligação entre Brasil e Israel. Segundo que se ele continuar com essa ligação com israel os Árabes que são grandes importadores do Brasil eles não vão mais comprar nada do brasil e eles são grandes importadores do Brasil e isso vai gerar muito desemprego. Depois essa conversa de liberar arma para o cidadão comum quem tinha que nós proteger era o Exercito e a policia mas pelo que estou vendo quem vai ter que se proteger é o próprio cidadão Brasileiro por que o exercito que ele tanto adora adora, não pode fazer isso e a policia não vai poder resolver isso sozinha, como estamos vendo no brasil Isso sem falar no rombo que o PT e o PMDB deixaram o brasil, quem vocês acham que Bolsonaro e Paulo guedes vão botar para pagar essa conta claro que somos nós. Muito obrigada.
+
+CHATGPT:
+  Competência 1: 40
+  Competência 2: 40
+  Competência 3: 40
+  Competência 4: 40
+  Competência 5: 0
+  Comentários para aperfeiçoamento: A redação apresenta diversas falhas que comprometem significativamente a qualidade do texto. Em primeiro lugar, a linguagem empregada é extremamente informal e apresenta diversos erros gramaticais, o que afeta diretamente o domínio da norma culta da língua. Além disso, o texto desvia-se do tema proposto, focando em aspectos políticos específicos e controversos que não dialogam diretamente com a questão central dos imigrantes no contexto brasileiro contemporâneo. A argumentação é fraca, baseando-se em suposições sem fundamentação e não oferece uma análise crítica ou construtiva do assunto. Também faltam elementos que conectem as ideias apresentadas, resultando em um texto confuso e desconexo. Por último, o texto viola os princípios dos direitos humanos ao disseminar preconceitos e promover uma visão alarmista sem base em evidências. É recomendável uma revisão completa do texto, com foco em adequar a linguagem, estruturar melhor os argumentos, alinhar o conteúdo ao tema proposto e adotar uma postura respeitosa e fundamentada.
+
+CORREÇÃO_ORIGINAL:
+  Competência 1: 0
+  Competência 2: 0
+  Competência 3: 0
+  Competência 4: 0
+  Competência 5: 0
+  Comentários para aperfeiçoamento: O texto recebe a nota zero por ter fugido ao tema, que era o Pacto de imigração. O autor, em vez disso, fez uma avaliação crítica do que pode ocorrer no governo de Jair Bolsonaro. Os trechos assinalados em vermelho marcam principalmente a informalidade e a redundância da linguagem. As partes em verde corrigem erros de ortografia. 1) A linguagem do texto é completamente informal. A redação tem um tom de bate-papo e está repleta de expressões coloquiais. Ainda que não tivesse fugido ao tema, a redação iria zerar neste aspecto pela inadequação linguística. 2) O autor não compreendeu a proposta ou preferiu escrever sobre outro assunto. De positivo, há um esforço para argumentar e, assim, compor um texto dissertativo. 3) Os argumentos são redundantes, o autor repete que a aproximação com Israel pode atrair terroristas. Repete que os árabes são grandes compradores do Brasil. Repete que Bolsonaro adora o Exército. Só nos parágrafos finais aparecem argumentos novos, mas não há conclusão. 4) Nota-se que o aluno tem uma noção do que é argumentar, mas a redundância e a falta de conclusão prejudicam também este quesito. 5) Não existe uma proposta de solução para os problemas apontados. Erros gramaticais: ('brasil primeiro que', 'Brasil. Primeiro, porque') ('brasil porque', 'o Brasil, pois,') ('israel', 'Israel,') ('Brasil', 'mas,') ('mas', 'poder, o Exército,') ('poder o Exercito', 'adora,') ('Segundo que', 'Segundo,') ('israel', 'Israel,') ('Árabes', 'árabes,') ('Brasil eles', 'Brasil,') ('brasil', 'Brasil') ('Depois', 'Depois,') (' quem', 'comum. Quem') ('nós', 'nos') ('Exercito e a policia mas', 'Exército e a polícia, mas,') ('vendo', 'vendo,') ('Brasileiro por que o exercito', 'brasileiro, porque o Exército,') ('adora', 'polícia') ('policia', 'Brasil.') ('o brasil, quem', 'no Brasil. Quem') ('guedes', 'Guedes') ('conta claro', 'conta? Claro').
+
+----- PROMPT #2 (https://vestibular.brasilescola.uol.com.br/banco-de-redacoes/18488) -----
+USER:
+  Utilizando os exemplos de correção de redação presentes no arquivo em anexo como guia, corrija a seguinte redação:
+
+  TEMA: Dependentes químicos: desafios para o tratamento adequado no Brasil.
+  TÍTULO: Desafio cracolândia.
+  REDAÇÃO: As decisões tomadas em instâncias superiores estão equivocadas ou favorecem a permanência no vício de drogas. Na cracolândia em São Paulo há policiais para protegê-los, assistentes sociais para cuidá-los e uma ampla rede de atenção psicossocial. O sentido de trabalho destes profissionais devem tomar outro rumo para desmontar o gasto médio de dependentes químicos em torno de 193 R$ sendo 58% de esmolas e o restante divididos entre roubos e prostituição. A rede de apoio assistencial na região da cracolândia é bem forte com presença garantida de inúmeros funcionários alocados em postos estratégicamente localizados na região com pronta resposta para as demandas. Precisa haver um novo treinamento desse pessoal para incentivar os dependentes químicos se libertarem do vício. Na Dinamarca o índice de criminalidade é quase nulo e a força policial lá é de 200 policiais a cada 100 mil habitantes. Em São Paulo-Brasil apenas a polícia militar tem 244 policiais a cada 100 mil habitantes sem contar a polícia civil, guarda civil e outras esferas de segurança. Em termos de contingente há pessoas suficientes para combater os roubos na região. As esmolas na região da cracolândia é a força incentivadora do uso de drogas. Precisa haver um estímulo dos governantes com tomadores de decisão na população com campanhas para que não dê esmolas! Isso trará um resultado significativo para desestimular o uso de drogas. ​​​​​​​ Está no trio de ações: assistência social, polícias e esmolas o meio favorável para desestimular o uso de drogas. Com ações efetivas e de boa-fé, a ação em conjunto nas três esferas trarão um excelente resultado.
+
+CHATGPT:
+  Competência 1: 40
+  Competência 2: 80
+  Competência 3: 80
+  Competência 4: 80
+  Competência 5: 160
+
+  Comentários para aperfeiçoamento: A redação apresenta uma abordagem relevante ao tema, mas enfrenta desafios em várias competências. Na Competência 1, há erros de concordância e regência que comprometem o domínio da norma culta. Na Competência 2, o texto discute o tema, mas algumas afirmações são genéricas e não se aprofundam na complexidade dos desafios enfrentados pelos dependentes químicos no Brasil. Na Competência 3, o candidato consegue relacionar informações, porém a organização e a clareza dos argumentos podem ser melhoradas para fortalecer a defesa do ponto de vista. Na Competência 4, há uso inadequado de conectivos, o que prejudica a coesão textual. Por fim, na Competência 5, respeita-se os direitos humanos ao se abordar a questão dos dependentes químicos com dignidade, contudo, seria enriquecedor incluir uma discussão sobre as políticas de saúde mental e de reabilitação. Seria benéfico revisar a estrutura das frases para uma maior clareza e revisar conceitos para garantir precisão nas comparações internacionais, como a situação na Dinamarca mencionada sem detalhamento suficiente.
+
+CORREÇÃO_ORIGINAL:
+  Competência 1: 160
+  Competência 2: 40
+  Competência 3: 40
+  Competência 4: 120
+  Competência 5: 40
+  Comentários para aperfeiçoamento: Evite uma abordagem tangencial. Reestruture e explore as discussões de acordo com o tema proposto. Não deixe de exercitar a sua escrita. Parágrafo 1 - Vírgula Vírgula Vírgula Reestruture as discussões iniciais e formule a tese Parágrafo 2 - Cuidado com a abordagem tangencial Parágrafo 3 - Melhore a estratégia coesiva Vírgula Abordagem tangencial Parágrafo 4 - Melhore a estratégia coesiva Evite um parágrafo frasal Abordagem tangencial Parágrafo 5 - Melhore a estratégia coesiva.
+
+----- PROMPT #3 (https://vestibular.brasilescola.uol.com.br/banco-de-redacoes/17153) -----
+USER:
+  Utilizando os exemplos de correção de redação presentes no arquivo em anexo como guia, corrija a seguinte redação:
+
+  TEMA: Como combater a transfobia no Brasil.
+  TÍTULO: Transfobia: Governo e Sociedade.
+  REDAÇÃO: Causadora de inúmeras vítimas ao longo dos anos a transfobia tem aumentado cada vez mais no Brasil fazendo que o mesmo figure como um dos países que mais mata pessoas trans no mundo, reflexo de um sistema que não conscientiza e educa a população a respeito do assunto, fazendo com que menos pessoas estejam aptas a debater sobre direitos desse grupo de pessoas na sociedade acarretando assim principalmente falta de empregos para esse grupo. Estatísticas mostram o crescimento exponencialmente de morte por todo país, fruto principalmente da prostituição por parte dessas pessoas, moradia em lugares inadequados, já que muitas delas não conseguem empregos, empregos que não são ofertados simplesmente pelo preconceito de que pessoas assim são marginais, não tem qualidade de trabalho entre outros aspectos. Preconceitos criados por uma sociedade que não tem ou que não é instruída a buscar informações sobre o assunto já que não é algo que as atinge. O governo brasileiro por sua vez de maneira nenhuma intervém para que pessoas trans possuam principalmente direitos de trabalho e aprendizagem, e de forma nenhuma age com criação de leis que protejam e guarde os direitos para que crimes sejam evitados evitando assim o índice de morte no país. Não possui programas de acolhimento a transgêneros, acompanhamento psicológico, programas de apoio financeiro, não busca distribuir informações e deixar claro a população sobre o que essas pessoas passam e precisam para se recuperar e adentrar a sociedade novamente. ​​​​​​​ Ações de combate a transfobia poderiam começar por simples propagandas televisionarias por parte do governo, como já existem para outras causas, dando maior visibilidade a causa, criação de leis trabalhistas específicas juntas de programas sociais trabalhistas para esse grupo, fazendo com que empregadores se sentissem mais aptos a receber essa comunidade já que teriam apoio e orientação a respeito do assunto.
+
+CHATGPT:
+  Competência 1: 80
+  Competência 2: 120
+  Competência 3: 80
+  Competência 4: 80
+  Competência 5: 160
+  Comentários para aperfeiçoamento: O texto apresenta uma série de desafios em relação ao uso da norma culta, com problemas de pontuação e estrutura frasal que impactam a clareza e a formalidade requerida. É essencial reorganizar as ideias em parágrafos mais estruturados, cada um com uma ideia central clara. A argumentação precisa ser mais desenvolvida, com o uso eficiente de dados e exemplos específicos que apoiem o ponto de vista apresentado. Além disso, é importante aprimorar a coesão textual, utilizando conectivos apropriados para melhorar o fluxo e a conexão entre as ideias. Uma revisão focada na clareza, coesão e coerência poderia significativamente elevar a qualidade da redação.
+
+CORREÇÃO_ORIGINAL:
+  Competência 1: 160
+  Competência 2: 120
+  Competência 3: 120
+  Competência 4: 120
+  Competência 5: 80
+  Comentários para aperfeiçoamento: Delimite e explore as discussões de acordo com a estrutura do texto. Evite uma abordagem superficial do tema. Não deixe de exercitar a sua escrita. Parágrafo 1 - Vírgula Use quando houver ideia de igualdade Vírgula Reestruture as disucssões iniciais Melhore a estratégia coesiva Vírgula Abordagem superficial. Reestruture as discussões Melhore a estratégia coesiva Vírgula Vírgula Cuidado com essa afirmação Vírgula Reestruture as discussões. Abordagem limitada Melhore a estratégia coesiva Vírgula
+
+----- PROMPT #4 (https://vestibular.brasilescola.uol.com.br/banco-de-redacoes/19232) -----
+USER:
+  Utilizando os exemplos de correção de redação presentes no arquivo em anexo como guia, corrija a seguinte redação:
+
+  TEMA: O uso de tecnologia entre as crianças.
+  TÍTULO: Os malefícios da tecnologia na Infância.
+  REDAÇÃO: No que concerne o uso de tecnologia entre as crianças é um problema não apenas social, mas de saúde. Dentre outros fatores, destaca-se o sedentarismo e o enfraquecimento das relações familiares, uma vez que não existe um limite no tempo de uso das tecnologias. Certamente, o uso excessivo de tecnologia por crianças afeta a saúde, tendo em vista a substituição do ato de brincar ao ar livre, movimentando-se, por ficar estático com o celular na mão na maior parte do dia, adotando, sem perceber, um estilo de vida sedentário. Segundo o Estudo de Risco Cardiovascular em Adolescentes , as doenças que antes eram vistas somente na fase adulta, estão cada vez mais presentes entre crianças e adolescentes como diabetes, obesidade, hipertensão arterial e distúrbios do sono. Ademais, destaca-se o enfraquecimento das relações familiares devido ao isolamento social e que gera consequências no desenvolvimento de habilidades sociais, indispensáveis para o indivíduo saber expressar seus desejos, sentimentos e atitudes de forma adequada, no âmbito social, familiar e profissional. De acordo com dados do Instituto Brasileiro de Geografia e Estatística , em 2021, cerca de 84,4% da população entre 10 e 13 anos tinha telefone móvel para uso pessoal. Ou seja, cada vez mais novos e que carecem de discernimento para usar as tecnologias de maneira saudável e produtiva. ​​​​​​​ Em suma, o físico Albert Einstein já proferiu que "o espírito humano precisa prevalecer sobre a tecnologia", de modo que é necessário que as famílias adotem hábitos saudáveis no que se refere ao tempo de uso das tecnologias. Além disso, são indispensáveis políticas públicas de conscientização da boa gestão do tempo em frente às telas e incentivo à prática de atividades físicas de acordo com cada faixa etária.
+
+CHATGPT:
+  Competência 1: 120
+  Competência 2: 160
+  Competência 3: 160
+  Competência 4: 120
+  Competência 5: 200
+
+  Comentários para aperfeiçoamento:
+  Competência 1 (Domínio da escrita formal da língua portuguesa): Há ocorrências de frases longas e um uso excessivo de vírgulas que comprometem a clareza do texto. Recomenda-se a revisão das estruturas sintáticas para garantir uma leitura mais fluida e formal.
+  Competência 2 (Compreender o tema e não fugir do que é proposto): A abordagem do tema é adequada, porém, poderia haver um desenvolvimento mais aprofundado das causas e consequências do uso excessivo de tecnologia por crianças, integrando mais exemplos e dados para enriquecer a discussão.
+  Competência 3 (Selecionar, relacionar, organizar e interpretar informações): A seleção de informações e dados é pertinente, mas seria benéfico desenvolver melhor a relação entre esses elementos para fortalecer a argumentação. Por exemplo, a citação do estudo sobre risco cardiovascular poderia ser melhor integrada com argumentos sobre as mudanças no estilo de vida das crianças.
+  Competência 4 (Conhecimento dos mecanismos linguísticos para construção da argumentação): O texto apresenta algumas repetições desnecessárias e falhas de coesão que podem ser melhoradas para garantir uma argumentação mais sólida e persuasiva.
+  Competência 5 (Respeito aos direitos humanos): O texto demonstra preocupação com o bem-estar das crianças, respeitando os direitos humanos ao destacar a importância de um desenvolvimento saudável na infância.
+
+CORREÇÃO_ORIGINAL:
+  Competência 1: 160
+  Competência 2: 160
+  Competência 3: 160
+  Competência 4: 200
+  Competência 5: 120
+  Comentários para aperfeiçoamento: As discussões precisam ser exploradas com mais produtividade. Não deixe de exercitar a sua escrita.
+
+----- PROMPT #5 (https://educacao.uol.com.br/bancoderedacoes/redacoes/ministros-nao-herois.htm) -----
+USER:
+  Utilizando os exemplos de correção de redação presentes no arquivo em anexo como guia, corrija a seguinte redação:
+
+  TEMA: Supremo Tribunal Federal e opinião pública.
+  TÍTULO: Ministros, não heróis.
+  REDAÇÃO: Nos últimos anos, a Operação Lava-Jato, responsável por desmantelar grandes esquemas de corrupção, deu grande crédito ao Poder Judiciário, sobretudo por causa da atuação do ex-juiz Sérgio Moro, o qual foi visto como um herói nacional. Em oposição a isso, o Supremo Tribunal Federal sofreu diversos ataques, em virtude de suas decisões poucos populares. Tal percepção negativa, no entanto, não deve ser vista como algo necessariamente ruim, pois nem sempre a defesa dos valores constitucionais agrada à maioria. Nesse sentido, é preciso dizer que a função principal da Suprema Corte é de guardar a Constituição Federal de 1988. Esta, por sua vez, possui um mecanismo de defesa inclusive contra a vontade do povo: as cláusulas pétreas. Estes Esses dispositivos, por guardarem valores essenciais à democracia, não podem ser alterados em nenhuma circunstância, seja por proposta de emenda ou plebiscito. Eles foram criados para resistir a ondas totalitárias e até mesmo a vontades populares eventualmente imbuídas de desejos de discriminação e de violência. Em certa medida, portanto, a Carta Magna pode ser antipopular e, da mesma maneira, será o STF, cujo papel é o de velar pela sua validade. Na verdade, a insatisfação gerada ocorre, em grande parte, por um motivo: a população brasileira não conhece quase nada sobre a legislação pátria. As escolas regulares do país preocupam-se mais em ensinar ensinar, por exemplo, a diferença entre mitose e meiose nas aulas de Biologia. O que é ensinado sobre Direito Constitucional? Nada! O resultado disso é desastroso: pouquíssimas pessoas sabem qual é o papel do STF e quais são seus deveres ou limitações. Assim, quando tal órgão não atende ao cego clamor popular, surge uma reivindicação em massa que pede o seu fechamento. Por fim, depreende-se que boa parte das reclamações quanto à atuação do STF surgem porque a população é ignorante. Para que isso seja mudado, é imprescindível que o Poder Legislativo crie uma lei que insira a disciplina de Direito Constitucional no Ensino Básico. Tal medida, provavelmente, poderá disseminar o caro conhecimento de que a função da Suprema Corte não está relacionada a heroísmos, mas a à defesa da Constituição Cidadã.
+
+CHATGPT:
+  Competência 1: 160
+  Competência 2: 160
+  Competência 3: 160
+  Competência 4: 160
+  Competência 5: 200
+  Comentários para aperfeiçoamento: A redação apresenta bom domínio do tema e da escrita formal, mas há repetições e pequenos deslizes linguísticos que poderiam ser evitados para melhorar a fluidez do texto. Seria enriquecedor expandir a argumentação com mais exemplos concretos e talvez incorporar dados ou pesquisas sobre o conhecimento da população acerca do STF para fortalecer ainda mais o debate proposto.
+
+CORREÇÃO_ORIGINAL:
+  Competência 1: 200
+  Competência 2: 200
+  Competência 3: 200
+  Competência 4: 200
+  Competência 5: 200
+  Comentários para aperfeiçoamento: Independentemente de se concordar ou não com as ideias do autor, a redação merece a nota máxima por apresentar, formalmente, todos os requisitos de uma dissertação realizada por um aluno no último ano do Ensino Médio. O autor apresenta uma tese e a defende com argumentos válidos. Parece exagero a proposta de ensinar Direito Constitucional no ensino médio, mas isso não invalida o raciocínio. Igualmente, o autor exagera em considerar a Constituição de 1988 definitiva, pois qualquer constituição pode ser revogada e uma Assembleia Constituinte, convocada, em situações em que a ordem constitucional consagrada já não atende os interesses legítimos da população de um país. A própria Constituição de 1988 é um exemplo disso, pois substituiu a de 1967. Mas isso é uma questão de conteúdo e não vem ao caso avaliá-lo quando ele é coerente com o que se espera de uma redação escolar. Por fim, vale dizer que há poucos erros e que, além dessas correções em verde, há sugestões na mesma cor para o aprimoramento do estilo do autor.
